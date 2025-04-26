@@ -65,7 +65,7 @@ export default function Home() {
       className="container mx-auto pb-32 grid grid-cols-1 md:grid-cols-3 gap-8"
       >
         {[
-          { title: "Shop", desc: "Discover products", href: "/shop/products", color: "bg-amber-100" },
+          { title: "Shop", desc: "Discover products", href: "/shop", color: "bg-amber-100" },
           { title: "Trek", desc: "Book adventures", href: "/trek", color: "bg-green-100" },
           { title: "Cab", desc: "Ride anywhere", href: "/cab", color: "bg-blue-100" },
         ].map((service, index) => (

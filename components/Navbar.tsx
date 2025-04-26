@@ -59,17 +59,17 @@ const Navbar = () => {
 
                 <div className="hidden md:flex items-center justify-center font-extralight gap-6 absolute left-1/2 transform -translate-x-1/2">
                     <Button variant="ghost" className="hidden text-sm md:flex rounded-full">
-                        <Link href="/" className="text-sm font-medium hover:font-bold">
+                        <Link href="/shop" className="text-sm font-medium hover:font-bold">
                             Shops
                         </Link>
                     </Button>
                     <Button variant="ghost" className="hidden text-sm md:flex rounded-full">
-                        <Link href="/" className="text-sm font-medium hover:font-bold">
+                        <Link href="/trek" className="text-sm font-medium hover:font-bold">
                             Treks
                         </Link>
                     </Button>
                     <Button variant="ghost" className="hidden text-sm md:flex rounded-full">
-                        <Link href="/" className="text-sm font-medium hover:font-bold">
+                        <Link href="/cab" className="text-sm font-medium hover:font-bold">
                             Cabs
                         </Link>
                     </Button>
@@ -94,17 +94,17 @@ const Navbar = () => {
                 {isMobileMenuOpen && isMobile && (
                     <div className="absolute top-14 left-0 w-full bg-white shadow-md z-50 flex flex-col items-center space-y-4 py-4">
                         <Button variant="ghost" className="text-sm md:hidden rounded-full">
-                            <Link href="/" className="text-sm font-medium hover:font-bold">
+                            <Link href="/shop" className="text-sm font-medium hover:font-bold">
                                 Shops
                             </Link>
                         </Button>
                         <Button variant="ghost" className="text-sm md:hidden rounded-full">
-                            <Link href="/" className="text-sm font-medium hover:font-bold">
+                            <Link href="/trek" className="text-sm font-medium hover:font-bold">
                                 Treks
                             </Link>
                         </Button>
                         <Button variant="ghost" className="text-sm md:hidden rounded-full">
-                            <Link href="/" className="text-sm font-medium hover:font-bold">
+                            <Link href="/cab" className="text-sm font-medium hover:font-bold">
                                 Cabs
                             </Link>
                         </Button>
