@@ -74,18 +74,18 @@ const Navbar = () => {
                         </Link>
                     </Button>
                     <div className="text-netural-300 cursor-default">|</div>
-                    <Button variant="ghost" className="hidden text-sm md:flex rounded-full">
-                        <Link href="#blog" className="text-sm font-medium hover:font-bold">
+                    <Button variant="ghost" asChild className="hidden text-sm md:flex rounded-full">
+                        <Link href="/#blog" className="text-sm font-medium hover:font-bold">
                             Blog
                         </Link>
                     </Button>
-                    <Button variant="ghost" className="hidden text-sm md:flex rounded-full">
-                        <Link href="#about" className="text-sm font-medium hover:font-bold">
+                    <Button variant="ghost" asChild className="hidden text-sm md:flex rounded-full">
+                        <Link href="/#about" className="text-sm font-medium hover:font-bold">
                             About
                         </Link>
                     </Button>
-                    <Button variant="ghost" className="hidden text-sm md:flex rounded-full">
-                        <Link href="#contact" className="text-sm font-medium hover:font-bold">
+                    <Button variant="ghost" asChild className="hidden text-sm md:flex rounded-full">
+                        <Link href="/#contact" className="text-sm font-medium hover:font-bold">
                             Contact
                         </Link>
                     </Button>
@@ -108,18 +108,18 @@ const Navbar = () => {
                                 Cabs
                             </Link>
                         </Button>
-                        <Button variant="ghost" className="text-sm md:hidden rounded-full">
-                            <Link href="#blog" className="text-sm font-medium hover:font-bold">
+                        <Button variant="ghost" asChild className="text-sm md:hidden rounded-full">
+                            <Link href="/#blog" className="text-sm font-medium hover:font-bold">
                                 Blog
                             </Link>
                         </Button>
-                        <Button variant="ghost" className="text-sm md:hidden rounded-full">
-                            <Link href="#about" className="text-sm font-medium hover:font-bold">
+                        <Button variant="ghost" asChild className="text-sm md:hidden rounded-full">
+                            <Link href="/#about" className="text-sm font-medium hover:font-bold">
                                 About
                             </Link>
                         </Button>
-                        <Button variant="ghost" className="text-sm md:hidden rounded-full">
-                            <Link href="#contact" className="text-sm font-medium hover:font-bold">
+                        <Button variant="ghost" asChild className="text-sm md:hidden rounded-full">
+                            <Link href="/#contact" className="text-sm font-medium hover:font-bold">
                                 Contact
                             </Link>
                         </Button>
