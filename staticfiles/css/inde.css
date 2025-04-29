@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+.logo {
+   height: 60px; /* or any size you want */
+   width: auto;  /* keeps aspect ratio */
+}
+
+h1 {
+      font-size: 50px;
+      font-weight: 64px;
+      color: #222;
+}
+
+h2 {
+   font-size: 50 px;
+   line-height: 64px;
+   color: #222;
+}
+h4 {
+   font-size: 20px;
+   
+   color: #222;
+}
+
+h6 {
+   font-weight: 700;
+   font-size: 12px;
+}
+
+P {
+   font-size: 16px;
+   color: #465b52;
+   margin: 15px 0 20px 0;;
+}
+
+.section-p1 {
+   padding: 60px 80px;
+}
+.section-m1{
+   padding: 40px 0;
+}
+
+
+body {
+   width: 100%;
+   background-color: #e0f0ff;
+   margin: 0;
+}
+
+#header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 80px;
+   background-color: #E3E6E3;
+   box-shadow: 0 5px 15px 
+   rgba(0, 0, 0, 0.6 );
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+
+}
+#navbar {
+   display: flex;
+   gap: 5px; /* spacing between nav items */
+   list-style: none;
+   position: relative;
+}
+#navbar li{
+   position: relative; /* for the active line */
+   padding: 0px 10px;
+   list-style: none;
+}
+#navbar li a {
+   text-decoration: none;
+   color: #1A1A1A;
+   font-weight: 600;
+   padding: 0px 20px;
+   transition:  0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+   color: #088178;
+}
+
+#navbar li a.active::after ,
+#navbar li a:hover::after {
+   content: '';
+   display: block;
+   width: 30%;
+   height: 2px;
+   background-color: #088178;
+   position: absolute;
+   bottom: -4px; /* Adjust this value to position the line */
+   left: 20px;
+   
+}
+
+/* Home Page */
+#hero {
+   background-image: url("../images/cheese.jpg");
+   background-repeat: no-repeat;
+   margin-right: 40px;
+   height: 90vh;
+   width: 100%;
+   background-size: 400px;
+   background-position: top 25% right 30px;
+   padding: 0 80px ;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+#hero h4 {
+   padding-bottom: 15px;
+}
+#hero h1 {
+   color: #088178;
+}
+
+#hero button{
+   background-image: url("../images/button1.jpg");
+   background-color: transparent;
+   color: #088178;
+   border: 0;
+   padding: 14px 80px 14px 65px;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 15px;
+}
+
+
+/* Feature section background (new color) */
+#feature {
+   background-color: #fef6e4;  /* soft cream/yellow section */
+   padding: 40px 20px; /* give space inside the section */
+   margin-top: -100px; /* pull section upward if needed */
+   display: flex;
+   justify-content: center;
+}
+
+/* Feature box */
+#feature .fe-box {
+   width: 250px;
+   text-align: center;
+   padding: 30px;
+   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+   border: 2px solid #cce7d0;
+   border-radius: 4px;
+   margin: 0 auto;
+   background: #eafff1;
+}
+
+#feature .fe-box h6 {
+   display: inline-block;
+   padding: 9px 8px 6px 8px;
+   line-height: 1;
+   border-radius: 6px;
+   color: #088178;
+   background-color: #fddde4;
+}

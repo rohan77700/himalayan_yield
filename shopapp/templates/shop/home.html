@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/inde.css' %}">
+
+</head>
+<body>
+   <section id="header">
+      <a href="#"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a>
+
+      <div>
+         <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="{% url 'shopapp:product' %}">Shop</a></li>
+            <li><a href="{% url 'shopapp:blog' %}">Blog</a></li>
+            <li><a href="{% url 'shopapp:about' %}">About</a></li>
+            <li><a href="{% url 'shopapp:contact' %}">Contact</a></li>
+            <li><a href="{% url 'shopapp:cart' %}">
+               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a></li>
+
+         </ul>
+      </div>
+   </section>
+
+
+   <section id="hero">
+
+
+      <!-- <img src="{% static 'images/cheese.jpg' %}" alt="test"> -->
+
+         <h4>Crafted By Nature</h4>
+         <h2>Perfected by Himalayas</h2>
+         <h1>Mountainous Bites of Purity</h1>
+         <p>“Yak Products From the Himalayas”</p>
+         <button>Shop Now</button>
+   </section>
+
+   <section id="feature" class="section-p1">
+      <div class="fe-box">
+         <img src="{%static 'images/feature/free.png' %}" width="200" height="200" alt="">
+         <h6>Free Shipping</h6>
+         </div>
+         <div class="fe-box">
+         <img src="{%static 'images/feature/online.png' %}" width="200" height="200" alt="">
+         <h6>Online Order</h6>
+      </div>
+      <div class="fe-box">
+         <img src="{% static 'images/feature/authentic.png' %}" width="200" height="200" alt="">
+         <h6>Authentic Product</h6>
+      </div>
+      <div class="fe-box">
+         <img src="{% static 'images/feature/customer.png' %}" width="200" height="200" alt="">
+         <h6>24/7 Customer Care</h6>
+      </div>
+   </section>
+</body>
+</html>
